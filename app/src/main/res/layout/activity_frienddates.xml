@@ -1,0 +1,73 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.joanne.frienddate.frienddates"
+    android:background="@color/babyblue"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="frienddates"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp" />
+
+        <TableRow>
+            <TextView android:text="Friend"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView android:text="Place"
+                android:textStyle="bold"
+                android:paddingLeft="18dp"
+                android:layout_column="1">
+            </TextView>
+
+            <TextView android:text="Date"
+                android:paddingLeft="24dp"
+                android:textStyle="bold"
+                android:layout_column="2">
+            </TextView>
+
+            <TextView android:text="Time"
+                android:textStyle="bold"
+                android:paddingLeft="14dp"
+                android:layout_column="3">
+            </TextView>
+
+            <TextView android:text="Activity"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_column="4">
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:onClick="home"
+        android:id="@+id/button"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
